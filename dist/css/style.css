@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 24px;
+  background-color: #000;
+  font-family: Arial, sans-serif;
+}
+
+.mobile-app {
+  position: relative;
+  width: 390px;
+  height: 844px;
+  background-color: #111111;
+  border: 1px solid #2a2a2a;
+  overflow: hidden;
+}
+
+.status-bar {
+  height: 32px;
+  padding: 8px 16px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.mobile-main {
+  height: calc(100% - 32px - 50px - 95px);
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.now-playing {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 95px;
+  height: 50px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  border-radius: 8px;
+}
+
+.mobile-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 95px;
+  background-color: #0d0d0d;
+  border-top: 1px solid #222222;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-box {
+  min-height: 48px;
+  padding: 12px;
+  border: 1px dashed #f4e64c;
+  background-color: rgba(244, 230, 76, 0.15);
+  color: #f4e64c;
+  font-size: 14px;
+}
+
+.page-box--filters {
+  min-height: 40px;
+}
+
+.page-box--quick-mixes {
+  min-height: 130px;
+}
+
+.page-box--made-for-you {
+  min-height: 180px;
+}
+
+.page-box--top-mixes {
+  min-height: 160px;
+}
+
+.page-box--search-input {
+  min-height: 44px;
+}
+
+.page-box--browse-title,
+.page-box--discover-title {
+  min-height: 24px;
+}
+
+.page-box--search-grid {
+  min-height: 340px;
+}
+
+.page-box--library-search {
+  min-height: 44px;
+}
+
+.page-box--library-tabs {
+  min-height: 36px;
+}
+
+.page-box--library-list {
+  min-height: 320px;
+}
+
+.page-box--playlist-group {
+  min-height: 56px;
+}
+
+.page-box--profile-header {
+  min-height: 120px;
+}
+
+.page-box--friends {
+  min-height: 80px;
+}
+
+.page-box--plan-card {
+  min-height: 100px;
+}
+
+.page-box--profile-menu {
+  min-height: 44px;
+}
+
+.page-box--playlist-header {
+  min-height: 40px;
+}
+
+.page-box--playlist-cover {
+  min-height: 180px;
+}
+
+.page-box--playlist-title {
+  min-height: 60px;
+}
+
+.page-box--playlist-controls {
+  min-height: 48px;
+}
+
+.page-box--songs-list {
+  min-height: 260px;
+}
