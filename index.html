@@ -3,133 +3,184 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spotify Mobile Wireframe</title>
+  <title>Spotify Home Mobile</title>
   <link rel="stylesheet" href="./dist/css/style.css" />
 </head>
 <body>
-  <!-- =====================
-    HOME
-  ===================== -->
   <div class="mobile-app">
-    <div class="status-bar">status bar</div>
+    <!-- Status Bar -->
+    <div class="status-bar">
+      <span class="status-bar__time">9:41</span>
 
-    <main class="mobile-main page page--home">
-      <section class="page-box page-box--filters">filters</section>
-      <section class="page-box page-box--quick-mixes">quick mixes</section>
-      <section class="page-box page-box--made-for-you">made for you</section>
-      <section class="page-box page-box--top-mixes">top mixes</section>
+      <div class="status-bar__icons">
+        <span>📶</span>
+        <span>📡</span>
+        <span>78%</span>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="mobile-main">
+      <!-- Filters -->
+      <section class="filters" aria-label="Content filters">
+        <div class="filters__chips">
+          <button class="filter-chip filter-chip--active" type="button">Music</button>
+          <button class="filter-chip" type="button">Podcasts</button>
+          <button class="filter-chip" type="button">Audiobooks</button>
+        </div>
+
+        <button class="filters__settings" type="button" aria-label="Settings">
+          ⚙
+        </button>
+      </section>
+
+      <!-- Quick Mixes -->
+      <section class="quick-mixes" aria-label="Quick mixes">
+        <div class="quick-mixes__grid">
+          <a class="quick-mix-card" href="#">
+            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=300" alt="Daily Mix 1 cover" />
+            <div class="quick-mix-card__content">
+              <h3 class="quick-mix-card__title">Daily Mix 1</h3>
+              <p class="quick-mix-card__artist">Daft Punk</p>
+            </div>
+          </a>
+
+          <a class="quick-mix-card" href="#">
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300" alt="Daily Mix 2 cover" />
+            <div class="quick-mix-card__content">
+              <h3 class="quick-mix-card__title">Daily Mix 2</h3>
+              <p class="quick-mix-card__artist">Spotify Mix</p>
+            </div>
+          </a>
+
+          <a class="quick-mix-card" href="#">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300" alt="Daily Mix 3 cover" />
+            <div class="quick-mix-card__content">
+              <h3 class="quick-mix-card__title">Daily Mix 3</h3>
+              <p class="quick-mix-card__artist">Daily подборка</p>
+            </div>
+          </a>
+
+          <a class="quick-mix-card" href="#">
+            <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=300" alt="Instant Crush cover" />
+            <div class="quick-mix-card__content">
+              <h3 class="quick-mix-card__title">Instant Crush</h3>
+              <p class="quick-mix-card__artist">Daft Punk</p>
+            </div>
+          </a>
+
+          <a class="quick-mix-card" href="#">
+            <img src="https://images.unsplash.com/photo-1485579149621-3123dd979885?w=300" alt="Around the World cover" />
+            <div class="quick-mix-card__content">
+              <h3 class="quick-mix-card__title">Around the World</h3>
+              <p class="quick-mix-card__artist">Daft Punk</p>
+            </div>
+          </a>
+
+          <a class="quick-mix-card" href="#">
+            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=300" alt="Rock Mix cover" />
+            <div class="quick-mix-card__content">
+              <h3 class="quick-mix-card__title">Rock Mix</h3>
+              <p class="quick-mix-card__artist">Spotify</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Made For You -->
+      <section class="content-section" aria-labelledby="made-for-you-title">
+        <div class="section-header">
+          <h2 id="made-for-you-title">Made For You</h2>
+          <button type="button" aria-label="More">•••</button>
+        </div>
+
+        <div class="media-row">
+          <a class="media-card" href="#">
+            <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=500" alt="Discover Weekly cover" />
+            <h3>Discover Weekly</h3>
+            <p>Your weekly mixtape of fresh music.</p>
+          </a>
+
+          <a class="media-card" href="#">
+            <img src="https://images.unsplash.com/photo-1464375117522-1311dd6a1785?w=500" alt="Daily Mix 1 cover" />
+            <h3>Daily Mix 1</h3>
+            <p>Linkin Park, System Of A Down and more.</p>
+          </a>
+
+          <a class="media-card" href="#">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=500" alt="Daily Mix 2 cover" />
+            <h3>Daily Mix 2</h3>
+            <p>Avril Lavigne, Lady Gaga and more.</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Top Mixes -->
+      <section class="content-section" aria-labelledby="top-mixes-title">
+        <div class="section-header">
+          <h2 id="top-mixes-title">Your top mixes</h2>
+          <button type="button" aria-label="More">•••</button>
+        </div>
+
+        <div class="media-row">
+          <a class="media-card" href="#">
+            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500" alt="Top Mix 1 cover" />
+            <h3>Top Mix 1</h3>
+            <p>Based on your recent plays.</p>
+          </a>
+
+          <a class="media-card" href="#">
+            <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=500" alt="Top Mix 2 cover" />
+            <h3>Top Mix 2</h3>
+            <p>Songs you listen to most.</p>
+          </a>
+
+          <a class="media-card" href="#">
+            <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=500" alt="Top Mix 3 cover" />
+            <h3>Top Mix 3</h3>
+            <p>A blend of your favorites.</p>
+          </a>
+        </div>
+      </section>
     </main>
 
-    <section class="now-playing">now playing</section>
-    <nav class="mobile-nav">mobile nav</nav>
-  </div>
+    <!-- Now Playing -->
+    <section class="now-playing" aria-label="Now playing">
+      <div class="now-playing__track">
+        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=300" alt="Current track cover" />
 
-  <!-- =====================
-    SEARCH
-  ===================== -->
-  <div class="mobile-app">
-    <div class="status-bar">status bar</div>
+        <div class="now-playing__info">
+          <h3>Get Lucky (feat. Pharrell W...)</h3>
+          <p>Daft Punk</p>
+        </div>
+      </div>
 
-    <main class="mobile-main page page--search">
-      <section class="page-box page-box--search-input">search input</section>
-      <section class="page-box page-box--browse-title">browse all</section>
-      <section class="page-box page-box--discover-title">discover</section>
-      <section class="page-box page-box--search-grid">search cards grid</section>
-    </main>
+      <div class="now-playing__actions">
+        <button type="button" aria-label="Add">＋</button>
+        <button type="button" aria-label="Play">▶</button>
+      </div>
+    </section>
 
-    <section class="now-playing">now playing</section>
-    <nav class="mobile-nav">mobile nav</nav>
-  </div>
-
-  <!-- =====================
-    LIBRARY
-  ===================== -->
-  <div class="mobile-app">
-    <div class="status-bar">status bar</div>
-
-    <main class="mobile-main page page--library">
-      <section class="page-box page-box--library-search">library search</section>
-      <section class="page-box page-box--library-tabs">group / recents / grid</section>
-      <section class="page-box page-box--library-list">library items</section>
-    </main>
-
-    <section class="now-playing">now playing</section>
-    <nav class="mobile-nav">mobile nav</nav>
-  </div>
-
-  <!-- =====================
-    LIBRARY LIST
-  ===================== -->
-  <div class="mobile-app">
-    <div class="status-bar">status bar</div>
-
-    <main class="mobile-main page page--library-list">
-      <section class="page-box page-box--library-search">library search</section>
-      <section class="page-box page-box--library-tabs">group / recents / list</section>
-      <section class="page-box page-box--playlist-group">playlist group</section>
-      <section class="page-box page-box--playlist-group">playlist group</section>
-      <section class="page-box page-box--playlist-group">playlist group</section>
-      <section class="page-box page-box--playlist-group">playlist group</section>
-    </main>
-
-    <section class="now-playing">now playing</section>
-    <nav class="mobile-nav">mobile nav</nav>
-  </div>
-
-  <!-- =====================
-    PROFILE
-  ===================== -->
-  <div class="mobile-app">
-    <div class="status-bar">status bar</div>
-
-    <main class="mobile-main page page--profile">
-      <section class="page-box page-box--profile-header">profile header</section>
-      <section class="page-box page-box--friends">friends</section>
-      <section class="page-box page-box--plan-card">premium card</section>
-      <section class="page-box page-box--profile-menu">listening history</section>
-      <section class="page-box page-box--profile-menu">settings and privacy</section>
-      <section class="page-box page-box--profile-menu">what's new</section>
-    </main>
-
-    <section class="now-playing">now playing</section>
-    <nav class="mobile-nav">mobile nav</nav>
-  </div>
-
-  <!-- =====================
-    PROFILE FREE USER
-  ===================== -->
-  <div class="mobile-app">
-    <div class="status-bar">status bar</div>
-
-    <main class="mobile-main page page--profile-free">
-      <section class="page-box page-box--profile-header">profile header</section>
-      <section class="page-box page-box--friends">friends empty state</section>
-      <section class="page-box page-box--plan-card">free plan card</section>
-      <section class="page-box page-box--profile-menu">listening history</section>
-      <section class="page-box page-box--profile-menu">settings and privacy</section>
-      <section class="page-box page-box--profile-menu">what's new</section>
-    </main>
-
-    <section class="now-playing">now playing</section>
-    <nav class="mobile-nav">mobile nav</nav>
-  </div>
-
-  <!-- =====================
-    PLAYLIST
-  ===================== -->
-  <div class="mobile-app">
-    <div class="status-bar">status bar</div>
-
-    <main class="mobile-main page page--playlist">
-      <section class="page-box page-box--playlist-header">playlist header</section>
-      <section class="page-box page-box--playlist-cover">playlist cover</section>
-      <section class="page-box page-box--playlist-title">playlist title / artist</section>
-      <section class="page-box page-box--playlist-controls">playlist controls</section>
-      <section class="page-box page-box--songs-list">songs list</section>
-    </main>
-
-    <section class="now-playing">now playing</section>
-    <nav class="mobile-nav">mobile nav</nav>
+    <!-- Bottom Navigation -->
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <ul class="mobile-nav__list">
+        <li class="mobile-nav__item mobile-nav__item--active">
+          <a href="#">Home</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#">Discover</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#">Search</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#">Library</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#">Me</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </body>
 </html>
