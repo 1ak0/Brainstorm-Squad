@@ -9,10 +9,10 @@
 <body>
   <div class="mobile-app">
     <!-- Status Bar -->
-    <div class="status-bar">
+    <div class="status-bar" aria-label="Device status bar">
       <span class="status-bar__time">9:41</span>
 
-      <div class="status-bar__icons">
+      <div class="status-bar__icons" aria-hidden="true">
         <span>📶</span>
         <span>📡</span>
         <span>78%</span>
@@ -21,7 +21,9 @@
 
     <!-- Main Content -->
     <main class="mobile-main">
-      <!-- Filters -->
+      <h1 class="visually-hidden">Spotify Home</h1>
+
+      <!-- Filter Chips -->
       <section class="filters" aria-label="Content filters">
         <div class="filters__chips">
           <button class="filter-chip filter-chip--active" type="button">Music</button>
@@ -29,16 +31,21 @@
           <button class="filter-chip" type="button">Audiobooks</button>
         </div>
 
-        <button class="filters__settings" type="button" aria-label="Settings">
+        <button class="filters__settings" type="button" aria-label="Open settings">
           ⚙
         </button>
       </section>
 
       <!-- Quick Mixes -->
       <section class="quick-mixes" aria-label="Quick mixes">
+        <h2 class="visually-hidden">Quick mixes</h2>
+
         <div class="quick-mixes__grid">
           <a class="quick-mix-card" href="#">
-            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=300" alt="Daily Mix 1 cover" />
+            <img
+              src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=300"
+              alt="Daily Mix 1 cover"
+            />
             <div class="quick-mix-card__content">
               <h3 class="quick-mix-card__title">Daily Mix 1</h3>
               <p class="quick-mix-card__artist">Daft Punk</p>
@@ -46,7 +53,10 @@
           </a>
 
           <a class="quick-mix-card" href="#">
-            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300" alt="Daily Mix 2 cover" />
+            <img
+              src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300"
+              alt="Daily Mix 2 cover"
+            />
             <div class="quick-mix-card__content">
               <h3 class="quick-mix-card__title">Daily Mix 2</h3>
               <p class="quick-mix-card__artist">Spotify Mix</p>
@@ -54,15 +64,21 @@
           </a>
 
           <a class="quick-mix-card" href="#">
-            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300" alt="Daily Mix 3 cover" />
+            <img
+              src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300"
+              alt="Daily Mix 3 cover"
+            />
             <div class="quick-mix-card__content">
               <h3 class="quick-mix-card__title">Daily Mix 3</h3>
-              <p class="quick-mix-card__artist">Daily подборка</p>
+              <p class="quick-mix-card__artist">Daily playlist</p>
             </div>
           </a>
 
           <a class="quick-mix-card" href="#">
-            <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=300" alt="Instant Crush cover" />
+            <img
+              src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=300"
+              alt="Instant Crush cover"
+            />
             <div class="quick-mix-card__content">
               <h3 class="quick-mix-card__title">Instant Crush</h3>
               <p class="quick-mix-card__artist">Daft Punk</p>
@@ -70,7 +86,10 @@
           </a>
 
           <a class="quick-mix-card" href="#">
-            <img src="https://images.unsplash.com/photo-1485579149621-3123dd979885?w=300" alt="Around the World cover" />
+            <img
+              src="https://images.unsplash.com/photo-1485579149621-3123dd979885?w=300"
+              alt="Around the World cover"
+            />
             <div class="quick-mix-card__content">
               <h3 class="quick-mix-card__title">Around the World</h3>
               <p class="quick-mix-card__artist">Daft Punk</p>
@@ -78,7 +97,10 @@
           </a>
 
           <a class="quick-mix-card" href="#">
-            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=300" alt="Rock Mix cover" />
+            <img
+              src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=300"
+              alt="Rock Mix cover"
+            />
             <div class="quick-mix-card__content">
               <h3 class="quick-mix-card__title">Rock Mix</h3>
               <p class="quick-mix-card__artist">Spotify</p>
@@ -91,24 +113,33 @@
       <section class="content-section" aria-labelledby="made-for-you-title">
         <div class="section-header">
           <h2 id="made-for-you-title">Made For You</h2>
-          <button type="button" aria-label="More">•••</button>
+          <button type="button" aria-label="More options">•••</button>
         </div>
 
         <div class="media-row">
           <a class="media-card" href="#">
-            <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=500" alt="Discover Weekly cover" />
+            <img
+              src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=500"
+              alt="Discover Weekly cover"
+            />
             <h3>Discover Weekly</h3>
             <p>Your weekly mixtape of fresh music.</p>
           </a>
 
           <a class="media-card" href="#">
-            <img src="https://images.unsplash.com/photo-1464375117522-1311dd6a1785?w=500" alt="Daily Mix 1 cover" />
+            <img
+              src="https://images.unsplash.com/photo-1464375117522-1311dd6a1785?w=500"
+              alt="Daily Mix 1 cover"
+            />
             <h3>Daily Mix 1</h3>
             <p>Linkin Park, System Of A Down and more.</p>
           </a>
 
           <a class="media-card" href="#">
-            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=500" alt="Daily Mix 2 cover" />
+            <img
+              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=500"
+              alt="Daily Mix 2 cover"
+            />
             <h3>Daily Mix 2</h3>
             <p>Avril Lavigne, Lady Gaga and more.</p>
           </a>
@@ -119,24 +150,33 @@
       <section class="content-section" aria-labelledby="top-mixes-title">
         <div class="section-header">
           <h2 id="top-mixes-title">Your top mixes</h2>
-          <button type="button" aria-label="More">•••</button>
+          <button type="button" aria-label="More options">•••</button>
         </div>
 
         <div class="media-row">
           <a class="media-card" href="#">
-            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500" alt="Top Mix 1 cover" />
+            <img
+              src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500"
+              alt="Top Mix 1 cover"
+            />
             <h3>Top Mix 1</h3>
             <p>Based on your recent plays.</p>
           </a>
 
           <a class="media-card" href="#">
-            <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=500" alt="Top Mix 2 cover" />
+            <img
+              src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=500"
+              alt="Top Mix 2 cover"
+            />
             <h3>Top Mix 2</h3>
             <p>Songs you listen to most.</p>
           </a>
 
           <a class="media-card" href="#">
-            <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=500" alt="Top Mix 3 cover" />
+            <img
+              src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=500"
+              alt="Top Mix 3 cover"
+            />
             <h3>Top Mix 3</h3>
             <p>A blend of your favorites.</p>
           </a>
@@ -147,17 +187,21 @@
     <!-- Now Playing -->
     <section class="now-playing" aria-label="Now playing">
       <div class="now-playing__track">
-        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=300" alt="Current track cover" />
+        <img
+          src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=300"
+          alt="Current track cover"
+        />
 
         <div class="now-playing__info">
+          <h2 class="visually-hidden">Current track information</h2>
           <h3>Get Lucky (feat. Pharrell W...)</h3>
           <p>Daft Punk</p>
         </div>
       </div>
 
       <div class="now-playing__actions">
-        <button type="button" aria-label="Add">＋</button>
-        <button type="button" aria-label="Play">▶</button>
+        <button type="button" aria-label="Add track">＋</button>
+        <button type="button" aria-label="Play track">▶</button>
       </div>
     </section>
 
@@ -165,7 +209,7 @@
     <nav class="mobile-nav" aria-label="Mobile navigation">
       <ul class="mobile-nav__list">
         <li class="mobile-nav__item mobile-nav__item--active">
-          <a href="#">Home</a>
+          <a href="#" aria-current="page">Home</a>
         </li>
         <li class="mobile-nav__item">
           <a href="#">Discover</a>
